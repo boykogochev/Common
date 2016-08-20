@@ -17,3 +17,39 @@
   height: 200px;
   margin: 5px;
 }
+.gallery .selected{
+  border: 1px solid red;
+  width: 95%;
+  height: 600px;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 200;
+}
+.gallery .selected img{
+  width: 60%;
+  float: left;
+  border-radius: 20px;
+  display: inline-block;
+}
+.gallery .selected input{
+  width: 35%;
+}
+.gallery .selected .name{
+  color: white;
+}
+.gallery .selected .selected-left{
+  background-color: gray;
+  width: 35%;
+  height: 600px;
+  display: inline-block;
+  margin-left: 3%;
+}
+.gallery .selected .comment{
+  width: 95%;
+  margin: 2%;
+  height: 60px;
+}
+.blured{
+  background-color: pink;
+}

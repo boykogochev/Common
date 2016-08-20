@@ -44,46 +44,67 @@
           </div>-->
         </div>
     </header>
-    <div class="gallery">
-        <div class="gallery-container">
-            <div>
-                <img class="image-in-gallery" src="imgs/1.jpg" alt="" />
+    <div id="root">
+      <div class="gallery">
+          <div class="gallery-container">
+              <div>
+                  <img class="image-in-gallery" src="imgs/1.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/2.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/3.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/4.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/5.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/6.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/7.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/8.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/9.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/10.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/11.jpg" alt="" />
+              </div>
+              <div>
+                  <img class="image-in-gallery" src="imgs/12.jpg" alt="" />
+              </div>
+          </div>
+          <div class= "selected">
+            <img class="selected-image" src="imgs/1.jpg" alt="" />
+            <div class="selected-left">
+              <div class="name">Name:</div>
+              <div class="comment-image">
+                <input type="text">
+                <input class="comment" type="text">
+              </div>
             </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/2.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/3.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/4.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/5.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/6.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/7.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/8.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/9.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/10.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/11.jpg" alt="" />
-            </div>
-            <div>
-                <img class="image-in-gallery" src="imgs/12.jpg" alt="" />
-            </div>
-        </div>
+          </div>
+      </div>
     </div>
+
+
+    <script src="../jquery.min.js"></script>
+    <script src="../scripts.js"></script>
+    <script>
+        $(function() {
+            $('.gallery').gallery();
+        });
+    </script>
 </body>
 
 </html>
