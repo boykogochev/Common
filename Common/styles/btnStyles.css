@@ -8,16 +8,21 @@
     width: 16%;
     text-decoration: none;
     border: 1px solid black;
-    border-top: 3px solid #0033cc;
+    border-top: 3px solid #00ccff;
     float: left;
-    background-color: #00ccff;
+
+    /*background-color: #00ccff;*/
 
     font-size: 25px;
-    color: black;
+    color: #00ccff;
 }
 .list-btn:hover {
-    background-color: #0099cc;
+    /*background-color: #0099cc;*/
+    border: 1px solid #00ccff;
+    border-top: 3px solid #00ccff;
     border-style: inset;
+    border-radius: 10px;
+
 }
 
 /*Drop-Down Button Set*/
