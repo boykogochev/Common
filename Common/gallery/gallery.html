@@ -10,40 +10,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="headerContainer">
+  <header>
+      <div class="headerContainer">
 
-            <img class="header-img" src="../imgs/the_shots.png" alt="">
-            <ul class="header-list-items">
-                <li>
-                    <a class="list-btn" href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a class="list-btn" href="#">Nwes</a>
-                </li>
-                <li>
-                    <a class="list-btn" href="#">Contact Us</a>
-                </li>
-                <li>
-                    <a class="list-btn" href="#">Gallery</a>
-                </li>
-                <li>
-                    <a class="list-btn" href="#">Menu</a>
-                </li>
-                <li>
-                    <a class="list-btn" href="#">Abouth Us</a>
-                </li>
-            </ul>
-            <!--  <div class="dropdown">
-              <button id="dropbtn" class="dropbtn">Menu</button>
-              <div id="myDropdown" class="dropdown-content">
-                  <a class="list-btn" href="#">Link 1</a>
-                  <a class="list-btn" href="#">Link 2</a>
-                  <a class="list-btn" href="#">Link 3</a>
-              </div>
-          </div>-->
-        </div>
-    </header>
+          <img class="header-img" src="../imgs/the_shots.png" alt="">
+          <ul class="header-list-items">
+              <li>
+                  <a class="list-btn" href="../index.html">Home</a>
+              </li>
+              <li>
+                  <a class="list-btn" href="../news.html">Nwes</a>
+              </li>
+              <li>
+                  <a class="list-btn" href="#">Contact Us</a>
+              </li>
+              <li>
+                  <a class="list-btn" href="#">Gallery</a>
+              </li>
+              <li>
+                  <a class="list-btn" href="#">Menu</a>
+              </li>
+              <li>
+                  <a class="list-btn" href="#">Abouth Us</a>
+              </li>
+          </ul>
+
+      </div>
+  </header>
+  <div class="info">
     <div id="root">
       <div class="gallery">
           <div class="gallery-container">
@@ -85,7 +79,7 @@
               </div>
           </div>
           <div class= "selected">
-            <img class="selected-image" src="imgs/1.jpg" alt="" />
+            <img class="selected-image" src="gallery/imgs/1.jpg" alt="" />
             <div class="selected-left">
               <div class="name">Name:</div>
               <div class="comment-image">
@@ -96,10 +90,12 @@
           </div>
       </div>
     </div>
+  </div>
 
 
-    <script src="../jquery.min.js"></script>
-    <script src="../scripts.js"></script>
+
+    <script src="jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <script>
         $(function() {
             $('.gallery').gallery();

@@ -5,10 +5,16 @@
 .float {
     float: left;
 }
+.gallery .selected .arrow{
+  width: 5%;
+  
+  position: absolute;
+  left:0;
+}
 .gallery {
     display: inline-block;
-    
-    width: 82%;
+
+    width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ccff+0,000000+100&0.65+0,0+100 */
     background: -moz-linear-gradient(top, rgba(0, 204, 255, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6-15 */
@@ -18,14 +24,16 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a600ccff', endColorstr='#00000000', GradientType=0);
     /* IE6-9 */
-    position: relative;
-    left: 8%;
+
+}
+#root{
+  position: relative;
+  left: 8%;
 }
 .gallery .gallery-container {
     width: 100%;
     background-color: black;
-    position: relative;
-    left: 8%;
+
 }
 .gallery .image-in-gallery {
     float: left;
@@ -42,7 +50,7 @@
     left: 2%;
     z-index: 200;
 }
-.gallery .selected img {
+.gallery .selected .selected-image {
     width: 60%;
     float: left;
     border-radius: 20px;

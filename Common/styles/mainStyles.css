@@ -5,11 +5,14 @@
 body {
     background-color: black;
 }
+#root{
+  width: 82%;
+}
 .headerContainer {
     height: 100px;
     width: 82%;
     background-color: black;
-  
+
     position: relative;
     left: 8%;
 }

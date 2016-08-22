@@ -6,6 +6,7 @@
     <title>The Shots</title>
     <link rel="stylesheet" href="styles/mainStyles.css">
     <link rel="stylesheet" href="styles/btnStyles.css">
+    <link rel="shortcut icon" href="icon.png" />
 </head>
 
 <body>
@@ -18,13 +19,13 @@
                     <a class="list-btn" href="#">Home</a>
                 </li>
                 <li>
-                    <a class="list-btn" href="#">Nwes</a>
+                    <a class="list-btn" href="news.html">Nwes</a>
                 </li>
                 <li>
                     <a class="list-btn" href="#">Contact Us</a>
                 </li>
                 <li>
-                    <a class="list-btn" href="gallery/gallery.html">Gallery</a>
+                    <a class="list-btn" href="gallery.html">Gallery</a>
                 </li>
                 <li>
                     <a class="list-btn" href="#">Menu</a>
@@ -33,7 +34,7 @@
                     <a class="list-btn" href="#">Abouth Us</a>
                 </li>
             </ul>
-          <!--  <div class="dropdown">
+            <!--  <div class="dropdown">
                 <button id="dropbtn" class="dropbtn">Menu</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a class="list-btn" href="#">Link 1</a>
@@ -44,19 +45,54 @@
         </div>
     </header>
     <div class="info">
-      <div class = "left-info">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img src="imgs/DJParty.png" alt="">
-      </div>
-      <div class = "right-info">
+        <div class="left-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img src="imgs/DJParty.png" alt="">
+        </div>
+        <div class="right-info">
 
-      </div>
+        </div>
     </div>
     <aside class="aside">
-      <img src="imgs/Aftershock.png" alt="">
+        <img src="imgs/Aftershock.png" alt="">
 
     </aside>
     <div class="container">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:350px;width:700px;'>
+            <div id='gmap_canvas' style='height:350px;width:700px;'></div>
+            <div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!</a></small></div>
+            <div><small><a href="https://binaireoptieservaringen.nl/">Meer weten over wat binaire opties precies zijn? Klik dan verder!</a></small></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none!important;
+                    background: none!important
+                }
+            </style>
+        </div>
+        <script type='text/javascript'>
+            function init_map() {
+                var myOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(42.651609, 23.343912),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(42.651609, 23.343912) //42.651609, 23.343912
+                });
+                infowindow = new google.maps.InfoWindow({
+                    content: '<strong>The Shots</strong><br>The Shots, ул. „8-ми декември“ 25, 1700 София, България<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
 
     </div>
     <footer>
