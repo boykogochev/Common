@@ -23,21 +23,21 @@ $.fn.buttons = function(columnsPerRow) {
 
   $youtube.on('click', function(){
     console.log('youtube is clicked');
-    /*TODO create The Shots Chanel*/
+    window.location.href = 'https://www.youtube.com/channel/UCjUvTHQvxzh37Mrl53MvOAw';
   })
 
   $twitter.on('click', function(){
     console.log('twitter is clicked');
-    /*TODO create The Shots Twitter*/
+    window.location.href = 'https://twitter.com/TheShotsBar';
   })
 
   $instagram.on('click', function(){
     console.log('instagram is clicked');
-    /*TODO create The Shots Instagram*/
+    window.location.href = 'https://www.instagram.com/theshotsbar/';
   })
 
   $google.on('click', function(){
     console.log('google is clicked');
-    /*TODO create The Shots googple page*/
+    window.location.href = 'https://plus.google.com/104245368109497815106';
   })
 }
