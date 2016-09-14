@@ -8,27 +8,24 @@ body {
     width: 95%;
 }
 header {
-
     margin-bottom: 0;
     padding-bottom: 0;
-
 }
 .header-container {
-  position: relative;
-  left:3%;
+    position: relative;
+    left: 3%;
     border: 1px solid black;
     width: 99%;
     height: 630px;
     background-image: url('../images/mainImg.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-
+    
 }
 .header-container .buttons img {
     position: fixed;
     width: 25%;
     padding-top: 15px;
-
 }
 .header-container .follow-icons {
     background-color: gray;
@@ -43,7 +40,7 @@ header {
     margin: auto;
     opacity: 0.8;
     border-radius: 10px;
-
+    border: 2px solid black;
 }
 .header-container .follow-icons img {
     width: 15%;
@@ -57,7 +54,6 @@ header {
     font-size: 60px;
     font-family: 'Courgette', sans-serif;
     font-style: oblique;
-
 }
 .buttons {
     width: 90%;
@@ -65,14 +61,12 @@ header {
     position: relative;
     left: 5%;
     display: inline-block;
-
 }
 .header-container .follow {
     width: 99%;
     height: 120px;
     display: inline-block;
     position: relative;
-
 }
 .header-container .follow img {
     position: absolute;
@@ -95,10 +89,11 @@ li {
 }
 .header-list-items a {
     padding-left: 3px;
-    border-left: 1px solid white;
+
     text-decoration: none;
     color: white;
     font-family: 'Courgette', sans-serif;
+    size: 40%;
 }
 .footer {
     margin: 0;
@@ -116,7 +111,6 @@ li {
 .footer-icons {
     width: 30%;
     float: right;
-
     margin-right: 5%;
 }
 .footer img {
@@ -129,16 +123,30 @@ li {
     padding-left: 80px;
     float: left;
 }
-.footer-links{
-  float: left;
-
-  width: 50%;
-  position: relative;
-  left: 5%;
+.footer-links {
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 5%;
 }
-.footer-links a{
-  color: gray;
-  text-decoration: none;
-  float: left;
-  padding-left: 1%;
+.footer-links a {
+    color: gray;
+    text-decoration: none;
+    float: left;
+    padding-left: 1%;
+}
+.active{
+  /*border: 3px solid red;*/
+  opacity: 1;
+  cursor: pointer;
+}
+.inactive{
+  opacity: 0.4;
+}
+.list-btn{
+  border-left: 1px solid white;
+}
+.active-button{
+  border-bottom: 1px solid white;
+  border-left: 0px solid white;
 }
