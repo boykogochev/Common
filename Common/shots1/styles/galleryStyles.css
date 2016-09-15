@@ -71,3 +71,11 @@
   opacity: 0.9;
   cursor: pointer;
 }
+.selected .hover-right-arrow{
+  width: 5%;
+  position: absolute;
+  left: 97%;
+  top: 40%;
+  opacity: 0.9;
+  cursor: pointer;
+}

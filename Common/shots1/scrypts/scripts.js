@@ -7,6 +7,7 @@ $.fn.gallery = function(columnsPerRow) {
     var $img = $gallery.find('.image-in-gallery');
     var $selectedImg = $selected.children('.selected-image');
     var $leftArrow = $selected.children('.left-arrow');
+    var $rightArrow = $selected.children('.right-arrow');
     var $blur = $('#blur');
 
 
@@ -23,6 +24,15 @@ $.fn.gallery = function(columnsPerRow) {
       $(this).removeClass('hover-left-arrow');
     })
 
+    $rightArrow.on('mouseover', function(){
+      $(this).addClass('hover-right-arrow');
+      $(this).removeClass('right-arrow');
+    })
+
+    $rightArrow.on('mouseout', function(){
+      $(this).addClass('right-arrow');
+      $(this).removeClass('hover-right-arrow');
+    })
     /*ARROW FUNCTIONS EDNS HERE*/
 
 
