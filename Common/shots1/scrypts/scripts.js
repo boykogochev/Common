@@ -33,6 +33,15 @@ $.fn.gallery = function(columnsPerRow) {
       $(this).addClass('right-arrow');
       $(this).removeClass('hover-right-arrow');
     })
+
+    $rightArrow.on('click', function(){
+      var image = $(this);
+      var nextImage = $img.next();
+      var src = nextImage.attr('src');    /*TODO Still not working!*/
+      console.log(src);
+      $selectedImg.attr('src', src);
+      $img = nextImage;
+    })
     /*ARROW FUNCTIONS EDNS HERE*/
 
 
