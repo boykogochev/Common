@@ -6,13 +6,30 @@ $.fn.gallery = function(columnsPerRow) {
     var $selected = $gallery.children('.selected');
     var $img = $gallery.find('.image-in-gallery');
     var $selectedImg = $selected.children('.selected-image');
-    var $leftArrow = $selected.children('.arrow');
+    var $leftArrow = $selected.children('.left-arrow');
     var $blur = $('#blur');
+
+
+
+    /*ARROW FUNCTIONS START HERE*/
+
+    $leftArrow.on('mouseover', function(){
+      $(this).addClass('hover-left-arrow');
+      $(this).removeClass('left-arrow');
+    })
+
+    $leftArrow.on('mouseout', function(){
+      $(this).addClass('left-arrow');
+      $(this).removeClass('hover-left-arrow');
+    })
+
+    /*ARROW FUNCTIONS EDNS HERE*/
+
 
     $img.on('click', function() {
         var clickedImg = $(this);
         var src = clickedImg.attr('src');
-        console.log(src);
+
         $selectedImg.attr('src', src);
         $selected.show();
         $blur.addClass('visible-div');
@@ -25,17 +42,11 @@ $.fn.gallery = function(columnsPerRow) {
         $(this).removeClass('hover-image');
     })
 
-    $leftArrow.on('mouseover', function() {
-        console.log('dhaj');
-        $leftArrow.show();
-    });
 
-    $selected.on('click', function() {
-        $selected.hide();
-        $blur.removeClass('visible-div');
-    });
+
+
     $selected.hide();
-    $leftArrow.hide();
+
 
 
 

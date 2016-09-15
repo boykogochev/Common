@@ -80,7 +80,9 @@
         <div class="selected">
 
             <!--"imgs/right-arrow.png"*-->
-            <img class="selected-image" src="../images/gallery/12.jpg" alt="" />
+            <img class="selected-image" src="../images/gallery/12.jpg"  />
+            <img class = "right-arrow" src="../images/rightArrow.png" />
+            <img class = "left-arrow" src="../images/leftArrow.png" />
 
         </div>
     </div>
@@ -114,9 +116,13 @@
 
     <script src="../scrypts/jquery.min.js"></script>
     <script src="../scrypts/scripts.js"></script>
+    <script src="../scrypts/closeImage.js"></script>
     <script>
         $(function() {
             $('.gallery').gallery();
+        });
+        $(function(){
+          $('#blur').close();
         });
     </script>
 </body>

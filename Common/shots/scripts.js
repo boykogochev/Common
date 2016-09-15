@@ -1,21 +1,21 @@
-$.fn.gallery = function() {
-
+$.fn.gallery = function(columnsPerRow) {
+    columnsPerRow = columnsPerRow || 4;
 
     var $gallery = $(this);
-    var $image = $('.image-in-gallery');
-    var $blur = $('#blur');
-
+    var $galleryList = $gallery.find('.gallery-container');
+    var $selected = $gallery.children('.selected');
+    var $img = $gallery.find('.image-in-gallery');
+    var $selectedImg = $selected.children('.selected-image');
+    var $leftArrow = $selected.children('.arrow');
 
     $img.on('click', function() {
-     console.log('clicked');
         var clickedImg = $(this);
         var src = clickedImg.attr('src');
-
+        console.log(src);
         $selectedImg.attr('src', src);
 
 
         $selected.show();
-
 
     });
 
