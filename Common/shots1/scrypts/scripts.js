@@ -46,7 +46,10 @@ $.fn.gallery = function(columnsPerRow) {
 
 
     $img.on('click', function() {
+
         var clickedImg = $(this);
+        var height = clickedImg.attr('height');
+        console.log(height);
         var src = clickedImg.attr('src');
 
         $selectedImg.attr('src', src);

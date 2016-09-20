@@ -17,11 +17,12 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.header-container .buttons img {
+.header-container .buttons img, .gallery-header-container .buttons img {
     position: fixed;
     width: 20%;
     padding-top: 5px;
     z-index: 50;
+    
 }
 .header-container .follow-icons {
     background-color: gray;
@@ -83,6 +84,7 @@ body {
   position: fixed;
   top: 0;
   opacity: 0.4;
+  z-index: 40;
 }
 ul{
   position: fixed;

@@ -1,6 +1,5 @@
 .gallery-header-container {
     position: relative;
-    ;
     left: 3%;
     width: 99%;
     height: 100px;
@@ -8,15 +7,11 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.gallery-header-container img {
-    position: relative;
-    top: 10%;
-    width: 25%;
-}
+
 .gallery {
     width: 99%;
     background: black;
-    height: 520px;
+    height: 1750px;
     position: relative;
     left: 3%;
 }
@@ -25,15 +20,16 @@
 }
 .gallery .gallery-container .image-in-gallery {
     width: 23%;
-    height: 150px;
+    height: 220px;
     float: left;
     margin: 1%;
     cursor: pointer;
 }
 .selected {
-    position: absolute;
-    width: 80%;
-    margin-left: 9%;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    margin-left: 12%;
     z-index: 200;
 }
 .selected .selected-image {
@@ -64,18 +60,18 @@
 .selected .right-arrow {
     left: 97%;
 }
-.selected .hover-left-arrow{
-  width: 5%;
-  position: absolute;
-  top: 40%;
-  opacity: 0.9;
-  cursor: pointer;
+.selected .hover-left-arrow {
+    width: 5%;
+    position: absolute;
+    top: 40%;
+    opacity: 0.9;
+    cursor: pointer;
 }
-.selected .hover-right-arrow{
-  width: 5%;
-  position: absolute;
-  left: 97%;
-  top: 40%;
-  opacity: 0.9;
-  cursor: pointer;
+.selected .hover-right-arrow {
+    width: 5%;
+    position: absolute;
+    left: 97%;
+    top: 40%;
+    opacity: 0.9;
+    cursor: pointer;
 }

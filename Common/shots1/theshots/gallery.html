@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="blur" > </div>
+    <div id="blur"> </div>
     <header class="gallery-header-container">
         <div class="buttons">
             <ul class="header-list-items">
@@ -33,7 +33,7 @@
                     <a class="list-btn" href="#">ABOUT US</a>
                 </li>
             </ul>
-            <img src="../images/the_shots.png" alt="" />
+            <img class = "logo-image" src="../images/the_shots.png" alt="" />
 
         </div>
 
@@ -54,7 +54,9 @@
             <div class="float">
                 <img class="image-in-gallery" src="../images/gallery/4.jpg" alt="" />
             </div>
-
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/5.jpg" alt="" />
+            </div>
             <div class="float">
                 <img class="image-in-gallery" src="../images/gallery/6.jpg" alt="" />
             </div>
@@ -76,38 +78,85 @@
             <div class="float">
                 <img class="image-in-gallery" src="../images/gallery/12.jpg" alt="" />
             </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/13.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/14.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/15.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/16.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/17.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/18.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/19.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/20.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/21.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/22.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/23.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/24.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/25.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/26.jpg" alt="" />
+            </div>
+            <div class="float">
+                <img class="image-in-gallery" src="../images/gallery/27.jpg" alt="" />
+            </div>
+
+
         </div>
         <div class="selected">
 
             <!--"imgs/right-arrow.png"*-->
-            <img class="selected-image" src="../images/gallery/12.jpg"  />
-            <img class = "right-arrow" src="../images/rightArrow.png" />
-            <img class = "left-arrow" src="../images/leftArrow.png" />
+            <img class="selected-image" src="../images/gallery/12.jpg" />
+            <img class="right-arrow" src="../images/rightArrow.png" />
+            <img class="left-arrow" src="../images/leftArrow.png" />
 
         </div>
     </div>
     <footer>
-      <div class = 'footer'>
-        <div class = "text-footer">Night Club &#169 The Shots all rights reserved!</div>
-        <div class = "text-footer">Sofia 1117 "8 Dekemvri" str. 35. 088 917 9997. @theshotsclub&#8482</div>
-        <img id = 'logo' src="../images/the_shots.png" alt="" />
-        <div class="footer-icons">
-          <img id = 'facebook' src="../images/footerIco/face.png" alt="">
-          <img id = 'youtube' src="../images/footerIco/you.png" alt="">
-          <img id = 'twitter' src="../images/footerIco/tweet.png" alt="">
-          <img id = 'instagram' src="../images/footerIco/insta.png" alt="">
-          <img id = 'google' src="../images/footerIco/goog.png" alt="">
+        <div class='footer'>
+            <div class="text-footer">Night Club &#169 The Shots all rights reserved!</div>
+            <div class="text-footer">Sofia 1117 "8 Dekemvri" str. 35. 088 917 9997. @theshotsclub&#8482</div>
+            <img id='logo' src="../images/the_shots.png" alt="" />
+            <div class="footer-icons">
+                <img id='facebook' src="../images/footerIco/face.png" alt="">
+                <img id='youtube' src="../images/footerIco/you.png" alt="">
+                <img id='twitter' src="../images/footerIco/tweet.png" alt="">
+                <img id='instagram' src="../images/footerIco/insta.png" alt="">
+                <img id='google' src="../images/footerIco/goog.png" alt="">
+            </div>
+
+
         </div>
-
-
-      </div>
-      <div class = 'footer-links'>
-        <a href="#">Home</a>
-        <a href="#">News</a>
-        <a href="#">Contact</a>
-        <a href="#">Gallery</a>
-        <a href="#">About us</a>
-      </div>
+        <div class='footer-links'>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">Gallery</a>
+            <a href="#">About us</a>
+        </div>
 
 
     </footer>
@@ -119,12 +168,13 @@
     <script src="../scrypts/jquery.min.js"></script>
     <script src="../scrypts/scripts.js"></script>
     <script src="../scrypts/closeImage.js"></script>
+    <script src="../scrypts/mainscript.js"></script>
     <script>
         $(function() {
+            $('.gallery-header-container').buttons();
             $('.gallery').gallery();
             $('#blur').close();
         });
-        
     </script>
 </body>
 
