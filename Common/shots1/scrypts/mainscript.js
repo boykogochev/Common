@@ -10,10 +10,12 @@ $.fn.buttons = function(columnsPerRow) {
     var $twitter = $('#twitter');
     var $instagram = $('#instagram');
     var $google = $('#google');
+    var $iOSLink = $('.ios-link');
+    var $googleLink = $('.google-link')
 
     var $menuButton = $('.header-list-items a');
 
-    console.log($menuButton);
+
 
     $menuButton.on('mouseover', function() {
         $(this).addClass('active-button');
@@ -114,5 +116,14 @@ $.fn.buttons = function(columnsPerRow) {
         $(this).addClass('inactive');
     })
 
+    /*APP ACTION START HERE*/
 
+    $iOSLink.on('click', function() {
+        window.open('https://itunes.apple.com/bg/app/the-shots-bar-unofficial/id977950197?mt=8');
+    })
+
+    $googleLink.on('click', function() {
+      
+        window.open('https://play.google.com/store/apps/details?id=com.stoitsev.theshotshybrid');
+    })
 }
