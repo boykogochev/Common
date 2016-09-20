@@ -87,7 +87,7 @@ body {
 ul{
   position: fixed;
   float: right;
-  margin-left: 45%;
+  margin-left: 40%;
   z-index: 50;
 }
 li {

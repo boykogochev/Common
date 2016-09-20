@@ -19,7 +19,7 @@ $.fn.buttons = function(columnsPerRow) {
 
     $(window).on('scroll', function(){
       var height = $(window).scrollTop();
-      console.log(height);
+      /*console.log(height);*/
       if (height) {
         $logo.css("width", '10%');
         $logo.css('margin-left', '150px')
@@ -28,7 +28,7 @@ $.fn.buttons = function(columnsPerRow) {
         $buttonsReSize.css("padding-top", "0px");
         /*$backgroundButtonDiv.animate({height: '300px', opacity: '0.4'}, "slow");*/
         $backgroundButtonDiv.animate({width: '99%', opacity: '0.4'}, "slow");
-        $backgroundButtonDiv.animate({opacity: '0.5'}, "slow");
+        $backgroundButtonDiv.animate({opacity: '0.5'}, 'slow');
       }
       else {
         $logo.css("width", '20%');
