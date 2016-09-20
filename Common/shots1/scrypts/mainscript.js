@@ -82,7 +82,7 @@ $.fn.buttons = function(columnsPerRow) {
 
     $instagram.on('click', function() {
         console.log('instagram is clicked');
-        window.open('https://www.instagram.com/theshotsbar/');
+        window.open('https://www.instagram.com/theshotsclub/');
     })
 
     $instagram.on('mouseover', function() {
@@ -114,5 +114,5 @@ $.fn.buttons = function(columnsPerRow) {
         $(this).addClass('inactive');
     })
 
-    
+
 }

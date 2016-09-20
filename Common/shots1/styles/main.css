@@ -14,7 +14,7 @@ header {
 .header-container {
     position: relative;
     left: 3%;
-    border: 1px solid black;
+
     width: 99%;
     height: 630px;
     background-image: url('../images/mainImg.jpg');
@@ -106,7 +106,7 @@ li {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
 .header-list-items a:hover:before {
@@ -126,6 +126,7 @@ li {
     padding-left: 5%;
     padding-top: 0.8%;
     float: left;
+    font-family: 'Courgette', sans-serif;
 }
 .footer-icons {
     width: 30%;
@@ -147,12 +148,14 @@ li {
     width: 50%;
     position: relative;
     left: 5%;
+    font-family: 'Courgette', sans-serif;
 }
 .footer-links a {
     color: gray;
     text-decoration: none;
     float: left;
     padding-left: 1%;
+    font-family: 'Courgette', sans-serif;
 }
 .active{
   /*border: 3px solid red;*/
@@ -163,5 +166,35 @@ li {
   opacity: 0.4;
 }
 .list-btn{
-  border-left: 2px solid white;
+  border-left: 3px solid white;
+}
+
+.app-store{
+
+  position: relative;
+  left: 37%;
+font-family: 'Courgette', sans-serif;
+  width: 99%;
+}
+
+.app-store img{
+  width: 15%;
+  height: 50px;
+
+  display: inline-block;
+}
+.app-store .get-app{
+  color: white;
+  position: relative;
+  left: 1.5%;
+  width: 30%;
+  font-size: 25px;
+
+}
+.app-store .get-app-info{
+  color: white;
+  position: relative;
+  left: 1%;
+  width: 30%;
+  font-size: 12px;
 }
