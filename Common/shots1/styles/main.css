@@ -136,12 +136,14 @@ li {
 }
 .footer-icons {
     width: 30%;
+
     float: right;
     margin-right: 5%;
     margin-top: 15px;
 }
 .footer img {
     width: 7%;
+    
     padding: 1%;
     float: right;
 }
@@ -164,7 +166,7 @@ li {
     text-decoration: none;
     float: left;
     padding-left: 4%;
-    
+
 }
 .active {
     /*border: 3px solid red;*/
