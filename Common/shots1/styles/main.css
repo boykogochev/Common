@@ -6,10 +6,7 @@
 body {
     background-color: black;
     width: 95%;
-}
-header {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    font-family: 'Courgette', sans-serif;
 }
 .header-container {
     position: relative;
@@ -22,8 +19,9 @@ header {
 }
 .header-container .buttons img {
     position: fixed;
-    width: 25%;
-    padding-top: 15px;
+    width: 20%;
+    padding-top: 5px;
+    z-index: 50;
 }
 .header-container .follow-icons {
     background-color: gray;
@@ -49,7 +47,6 @@ header {
 .header-container h1 {
     color: white;
     font-size: 60px;
-    font-family: 'Courgette', sans-serif;
     font-style: oblique;
 }
 .buttons {
@@ -75,22 +72,46 @@ header {
     margin: auto;
 }
 .header-list-items {
-    margin-top: 4%;
+    margin-top: 1%;
     float: right;
     list-style: none;
+}
+.background-button{
+  background-color: black;
+  width: 99%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  opacity: 0.4;
+}
+ul{
+  position: fixed;
+  float: right;
+  margin-left: 45%;
+  z-index: 50;
 }
 li {
     float: left;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
+    padding-top: 20px;
+
 }
 .header-list-items a {
     padding-left: 3px;
     position: relative;
     text-decoration: none;
     color: white;
-    font-family: 'Courgette', sans-serif;
-    size: 40%;
+
+}
+.list-btn {
+    border-left: 3px solid white;
+    position: fixed;
+}
+.stick{
+  top:0;
+  position: fixed;/*TODO*/
+  border-left: 3px solid white;
 }
 .header-list-items a:before {
     content: "";
@@ -118,7 +139,6 @@ li {
     width: 99%;
     height: 90px;
     background-color: #161616;
-    font-family: 'Courgette', sans-serif;
 }
 .footer .text-footer {
     text-align: center;
@@ -136,16 +156,17 @@ li {
 }
 .footer-icons {
     width: 30%;
-
     float: right;
     margin-right: 5%;
     margin-top: 15px;
 }
 .footer img {
     width: 7%;
-    
     padding: 1%;
     float: right;
+}
+.footer img:hover {
+    cursor: pointer;
 }
 .footer #logo {
     width: 9%;
@@ -157,7 +178,6 @@ li {
     width: 50%;
     position: relative;
     left: 5%;
-    font-family: 'Courgette', sans-serif;
 }
 .footer-links a {
     position: relative;
@@ -166,7 +186,6 @@ li {
     text-decoration: none;
     float: left;
     padding-left: 4%;
-
 }
 .active {
     /*border: 3px solid red;*/
@@ -184,7 +203,6 @@ li {
     margin-top: 20px;
     position: relative;
     left: 34%;
-    font-family: 'Courgette', sans-serif;
     width: 38%;
 }
 .app-store img {
@@ -199,17 +217,16 @@ li {
     opacity: 1;
     cursor: pointer;
 }
-.app-store .get-app {
+.app-store .get-app, .app-store .get-app-info {
     color: white;
     position: relative;
-    left: 7%;
     width: 90%;
+}
+.app-store .get-app {
+    left: 7%;
     font-size: 25px;
 }
 .app-store .get-app-info {
-    color: white;
-    position: relative;
     left: 5%;
-    width: 90%;
     font-size: 12px;
 }

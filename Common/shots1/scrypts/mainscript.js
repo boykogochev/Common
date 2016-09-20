@@ -2,9 +2,6 @@ $.fn.buttons = function(columnsPerRow) {
     var $buttons = $(this);
     var $icnoElemen = $buttons.find('.follow-icons');
 
-
-
-
     var $facebook = $('#facebook');
     var $youtube = $('#youtube');
     var $twitter = $('#twitter');
@@ -12,9 +9,33 @@ $.fn.buttons = function(columnsPerRow) {
     var $google = $('#google');
     var $iOSLink = $('.ios-link');
     var $googleLink = $('.google-link')
-
     var $menuButton = $('.header-list-items a');
+    var $logo = $('.logo-image');
+    var $buttonsReSize = $('li');
 
+    var $backgroundButtonDiv = $( "<div class='background-button'></div>" );
+
+
+
+    $(window).on('scroll', function(){
+      var height = $(window).scrollTop();
+      /*console.log(height);*/
+      if (height) {
+        $logo.css("width", '10%');
+        $logo.css('margin-left', '150px')
+        $buttons.append($backgroundButtonDiv);
+        $buttonsReSize.css("font-size", "12px");
+        $buttonsReSize.css("padding-top", "0px");
+      }
+      else {
+        $logo.css("width", '20%');
+        $logo.css('margin-left', '')
+        $backgroundButtonDiv.remove();
+        $buttonsReSize.css("font-size", "17px");
+        $buttonsReSize.css("padding-top", "20px");
+      }
+
+    })
 
 
     $menuButton.on('mouseover', function() {
@@ -29,7 +50,6 @@ $.fn.buttons = function(columnsPerRow) {
     /*FACEBOOK ACTION START HERE*/
 
     $facebook.on('click', function() {
-        console.log('facebook is clicked');
         window.open('https://www.facebook.com/theshotsclub/?ref=ts&fref=ts');
     })
 
@@ -47,7 +67,6 @@ $.fn.buttons = function(columnsPerRow) {
     /*YOUTUBE ACTION START HERE*/
 
     $youtube.on('click', function() {
-        console.log('youtube is clicked');
         window.open('https://www.youtube.com/channel/UCjUvTHQvxzh37Mrl53MvOAw');
     })
 
@@ -65,7 +84,6 @@ $.fn.buttons = function(columnsPerRow) {
     /*TWITTER ACTION START HERE*/
 
     $twitter.on('click', function() {
-        console.log('twitter is clicked');
         window.open('https://twitter.com/TheShotsBar');
     })
 
@@ -83,7 +101,6 @@ $.fn.buttons = function(columnsPerRow) {
     /*INSTAGRAM ACTION START HERE*/
 
     $instagram.on('click', function() {
-        console.log('instagram is clicked');
         window.open('https://www.instagram.com/theshotsclub/');
     })
 
@@ -101,7 +118,6 @@ $.fn.buttons = function(columnsPerRow) {
     /*GOOGLE ACTION START HERE*/
 
     $google.on('click', function() {
-        console.log('google is clicked');
         window.open('https://plus.google.com/104245368109497815106');
     })
 
@@ -123,7 +139,7 @@ $.fn.buttons = function(columnsPerRow) {
     })
 
     $googleLink.on('click', function() {
-      
+
         window.open('https://play.google.com/store/apps/details?id=com.stoitsev.theshotshybrid');
     })
 }
