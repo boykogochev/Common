@@ -7,7 +7,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 .gallery {
     width: 99%;
     background: black;
@@ -18,11 +17,17 @@
 .header-container {
     border: 1px solid red;
 }
-.gallery .gallery-container .image-in-gallery {
+.float {
     width: 23%;
     height: 220px;
+    overflow: hidden;
     float: left;
-    margin: 1%;
+    margin: 12px;
+}
+.gallery .gallery-container .image-in-gallery {
+    height: 420px;
+    margin-top: -30%;
+    margin-left: -100px;
     cursor: pointer;
 }
 .selected {
@@ -38,7 +43,6 @@
 }
 #blur {
     width: 100%;
-    
     position: fixed;
     left: 0;
     right: 0;
