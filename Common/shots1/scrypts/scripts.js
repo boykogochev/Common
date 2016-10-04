@@ -87,6 +87,19 @@ $.fn.gallery = function(columnsPerRow) {
     });
     /*ARROW FUNCTIONS EDNS HERE*/
 
+    /*SWIPE EFFECT STARTS HERE*/
+
+    $(document).on("swipeleft",function(){
+      var $nextImage = $curentImage.parent('.float').prev().find('.image-in-gallery');
+      console.log('blah');
+      if ($nextImage.length > 0) {
+          var src = $nextImage.attr('src');
+          $selectedImg.attr('src', src);
+          $curentImage = $nextImage;
+      }
+});
+    /*SWIPE EFFECT END HERE*/
+
 
     $img.on('click', function() {
         var clickedImg = $(this);
