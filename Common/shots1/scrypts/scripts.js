@@ -9,6 +9,7 @@ $.fn.gallery = function(columnsPerRow) {
     var $leftArrow = $selected.children('.left-arrow');
     var $rightArrow = $selected.children('.right-arrow');
     var $blur = $('#blur');
+    var $curentImage;
 
 
 
@@ -24,6 +25,19 @@ $.fn.gallery = function(columnsPerRow) {
         $(this).removeClass('hover-left-arrow');
     })
 
+    $leftArrow.on('click', function() {
+        var arrow = $(this);
+        var $nextImage = $curentImage.parent('.float').prev().find('.image-in-gallery');
+
+        if ($nextImage.length > 0) {
+            var src = $nextImage.attr('src');
+            $selectedImg.attr('src', src);
+            $curentImage = $nextImage;
+        }
+
+
+    })
+
     $rightArrow.on('mouseover', function() {
         $(this).addClass('hover-right-arrow');
         $(this).removeClass('right-arrow');
@@ -35,20 +49,48 @@ $.fn.gallery = function(columnsPerRow) {
     })
 
     $rightArrow.on('click', function() {
-            var arrow = $(this);
-            var nextImage = $img.next();
-            console.log($img);
-            var src = nextImage.attr('src'); /*TODO Still not working!*/
-            console.log(src);
+        var arrow = $(this);
+        var $nextImage = $curentImage.parent('.float').next().find('.image-in-gallery');
+
+        if ($nextImage.length > 0) {
+            var src = $nextImage.attr('src');
             $selectedImg.attr('src', src);
-            $img = nextImage;
-        })
-        /*ARROW FUNCTIONS EDNS HERE*/
+            $curentImage = $nextImage;
+        }
+
+    })
+
+    $(document).on('keydown', function(evt) {
+
+        if (evt.keyCode == 39) {
+            var $nextImage = $curentImage.parent('.float').next().find('.image-in-gallery');
+
+            if ($nextImage.length > 0) {
+                var src = $nextImage.attr('src');
+                $selectedImg.attr('src', src);
+                $curentImage = $nextImage;
+            }
+        }
+    });
+
+    $(document).on('keydown', function(evt) {
+
+        if (evt.keyCode == 37) {
+            var $nextImage = $curentImage.parent('.float').prev().find('.image-in-gallery');
+
+            if ($nextImage.length > 0) {
+                var src = $nextImage.attr('src');
+                $selectedImg.attr('src', src);
+                $curentImage = $nextImage;
+            }
+        }
+    });
+    /*ARROW FUNCTIONS EDNS HERE*/
 
 
     $img.on('click', function() {
         var clickedImg = $(this);
-        console.log(clickedImg.clientHeight);
+        $curentImage = clickedImg;
         var src = clickedImg.attr('src');
         $selectedImg.attr('src', src);
         $selected.show();

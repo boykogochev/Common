@@ -15,7 +15,9 @@ $.fn.buttons = function(columnsPerRow) {
 
     var $backgroundButtonDiv = $( "<div class='background-button'></div>" );
 
-
+    $(window).on('load', function(){
+      alert('Site Is Under Construction!')
+    })
 
     $(window).on('scroll', function(){
       var height = $(window).scrollTop();

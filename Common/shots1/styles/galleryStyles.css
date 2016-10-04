@@ -44,6 +44,7 @@
     right: 0;
 }
 .visible-div {
+    height: 1800px;
     background: blue;
     opacity: 0.3;
     z-index: 100;
