@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace tickets
+{
+    class tickets
+    {
+        static void Main(string[] args)
+        {
+            double pari = double.Parse(Console.ReadLine());
+            var kategoriq = Console.ReadLine();
+            double hora = double.Parse(Console.ReadLine());
+            double cena = 0;
+            double putni = 0;
+
+            if (kategoriq == "VIP")
+            {
+                cena += 499.99;
+            }
+            else
+            {
+                cena += 249.99;
+            }
+
+
+            if (hora <= 49)
+            {
+                putni = 0.4;
+
+            }
+
+            if (hora <= 24)
+            {
+                putni = 0.5;
+            }
+            if (hora <= 9)
+            {
+                putni = 0.6;
+            }
+            if (hora <= 4)
+            {
+                putni = 0.75;
+            }
+            if (hora >= 50)
+            {
+                putni = 0.25;
+            }
+            double rezultat = (pari * (1 - putni)) - (cena * hora);
+            if (rezultat < 0)
+            {
+                Console.WriteLine("Not enough money! You need {0:0.00} leva.", rezultat); //нямаш нужда от Math.Round Според мен 
+            }
+            else
+            {
+                Console.WriteLine("Yes! You have {0:0.00} leva left.",rezultat);
+            }
+
+        }
+    }
+}
